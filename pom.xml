@@ -12,6 +12,7 @@
 	<artifactId>aws-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>aws-demo</name>
+	<packaging>jar</packaging>
 	<description>Demo Application </description>
 
 	<properties>
