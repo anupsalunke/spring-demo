@@ -6,7 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AwsDemoApplication {
+class AwsDemoApplication {
 
 	private static final Logger LOG = LoggerFactory.getLogger(AwsDemoApplication.class);
 	
