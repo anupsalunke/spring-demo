@@ -1,9 +1,9 @@
 package com.demo.controller;
 
 import com.demo.dto.BaseResponseDTO;
-import com.demo.dto.request.CreateUserRequestDTO;
+import com.demo.dto.CreateUserRequestDTO;
 import com.demo.model.User;
-import com.demo.service.impl.UserService;
+import com.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

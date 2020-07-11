@@ -1,8 +1,8 @@
-package com.demo.service.impl;
+package com.demo.service;
 
-import com.demo.dto.request.CreateUserRequestDTO;
+import com.demo.dto.CreateUserRequestDTO;
 import com.demo.model.User;
-import com.demo.repository.impl.UserRepository;
+import com.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,10 +13,10 @@ import java.util.Optional;
 public class UserService {
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     public List<User> getAllUsers() {
-          return userRepository.findAll();
+        return userRepository.findAll();
     }
 
     public User getUser(int userId) {
@@ -24,7 +24,7 @@ public class UserService {
         return user.orElse(null);
     }
 
-    public String createUser(CreateUserRequestDTO requestDTO){
+    public String createUser(CreateUserRequestDTO requestDTO) {
         User user = new User();
         user.setFirstName(requestDTO.getFirstName());
         user.setLastName(requestDTO.getLastName());
